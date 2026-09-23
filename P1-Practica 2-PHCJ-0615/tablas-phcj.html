@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Le dice al navegador que muestre la página usando HTML5 estándar y evita errores de formato -->
+<html lang="en"> <!-- Indica que el idioma principal es el inglés -->
+<head> <!-- Guarda metadatos y configuración que no se ve en la pantalla -->
+    <meta charset="UTF-8"> <!-- Traducir el código para mostrar acentos, la ñ y emojis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptar sitios a teléfonos y evitar que se vean diminutos como en una PC-->
+    <title>Tablas en HTML</title> <!-- Título que aparece en la pestaña del navegador -->
+</head>
+
+<body> <!-- El cuerpo del documento -->
+    <h1>Tipos de tablas</h1> <!-- El titulo mas grande e importante -->
+    <p>El objetivo fundamental de las tablas en HTML sera mostrar una serie de datos en forma ordenada, organizado en filas y columnas </p>
+    <p>Para la creacion de una tabla intervienen diferentes elementos:</p>
+    <dl> <!-- 'dl' (Definition List): Crea una lista de definiciones de términos -->
+        <dt>Table</dt> <!-- 'dt' (Definition Term): Nombre del término a definir -->
+        <dd> <!-- 'dd' (Definition Description): Explicación o definición del término -->
+        Es la marca de comienzo de la tabla. Este elemento requiere la marca de cierre.
+        </dd>
+        <dt>Tr</dt> <!-- Término: Fila de la tabla (Table Row) -->
+        <dd>
+            Es la marca de comienzo de una fila. Esta marca debe estar dentro del elemento table
+        </dd>
+        <dt>Td</dt> <!-- Término: Celda de datos (Table Data) -->
+        <dd>
+            Es la marca de comeinzo de una celda. Esta marca debe estar dentro del elemento tr
+        </dd>
+    </dl>
+    <h2>Ejemplo</h2>
+    <table border="1"> <!-- 'table': crea la tabla | 'border="1"': dibuja un borde de 1 píxel a la tabla (uso clásico para visibilidad) -->
+        <tr> <!-- 'tr': define la primera fila -->
+            <td>Ciudad de Mexico</td> <!-- 'td': celda de datos común -->
+            <td>9.2 millones</td>
+        </tr>
+        <tr>
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        <tr>
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table>
+    <h2>Tabla con encabezado</h2>
+    <p>La caracteristicas de esta tabla es que se le agrega a las celdas el encabezado correspondiente, esto solo aplicaria a la primera
+        fila de la tabla con la etiqueta <em>th</em>, las demas filas usarian la etiqueta <em>td</em> con normalidad.
+    </p>
+    <table border="1">
+        <tr> <!-- Fila superior (encabezados) -->
+            <th>Ciudad</th> <!-- 'th' (Table Header): Celda de encabezado, resalta el texto en negrita y centrado -->
+            <th>Cantidad de habitantes</th>
+        </tr>
+        <tr>
+            <td>Ciudad de Mexico</td>
+            <td>9.2 millones</td>
+        </tr>
+        <tr>
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        <tr>
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table>
+    <h2>Tabla con titulo</h2>
+    <p>Para insertar un titulo a la tabla debemos incorporar el elemento caption inmediatamente despues de abrir la etiqueta <em>table</em>.
+    </p>
+    <table border="1">
+        <caption>Poblacion de las ciudades mas concurridas de Mexico</caption> <!-- 'caption': agrega un título descriptivo centrado arriba de la tabla -->
+        <tr>
+            <th>Ciudad</th>
+            <th>Cantidad de habitantes</th>
+        </tr>
+        <tr>
+            <td>Ciudad de Mexico</td>
+            <td>9.2 millones</td>
+        </tr>
+        <tr>
+            <td>Guadalajara</td>
+            <td>4.1 millones</td>
+        </tr>
+        <tr>
+            <td>Monterrey</td>
+            <td>3.9 millones</td>
+        </tr>
+    </table>
+</body>
+</html> <!-- Cierra el documento HTML completo -->
