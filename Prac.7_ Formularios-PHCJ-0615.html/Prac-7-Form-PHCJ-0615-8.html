@@ -5,21 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formularios en HTML</title>
 <!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
 <h2>Formulario con archivos</h2>
-<form action="" method="post">
-
-Ingresa tu nombre:
-<input type="text" name="nombre">
-<br>
-<input type="file" name="archivo">
-<br>
-<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<form action="" method="post"><!--'action=""': Indica la URL a la que se enviarán los datos. - 'method= "post"': Método 
+de envío HTTP que transmite la información de manera privada dentro de la petición. -->Ingresa tu nombre:
+<input type="text" name="nombre"><br><!-- 'type="text"': Define una casilla para introducir texto.- 'name="
+nombre"': Nombre con el que se enviará la variable al servidor. -->
+<input type="file" name="archivo"><br> <!-- Campo para la selección y carga de archivos desde el dispositivo del usuario.
+- 'type="file"': Muestra un botón para explorar los archivos locales del sistema.- 'name="archivo"': Identificador con el
+que el servidor recibirá los datos del documento subido. -->
+<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button> <!-- Botón para procesar y enviar el
+ formulario (incluye un icono de Font Awesome) -->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
 </form>
 </body>
