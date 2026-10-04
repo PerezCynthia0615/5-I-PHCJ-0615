@@ -1,28 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Define que este documento utiliza la versión HTML5 -->
+<html lang="en"> <!--indica que el idioma base es inglés -->
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
+<meta charset="UTF-8"> <!-- Define acentos, ñ y caracteres especiales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se adapte a dispositivos móviles -->
+<title>Formularios en HTML/PHCJ/0615</title> <!-- Título que aparece en la pestaña del navegador -->
 <!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+ <!-- Enlaza una hoja de estilos externa (Font Awesome) para importar y usar iconos en la página -->
 </head>
-<body>
-<h1>Formularios</h1>
-<p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
+<body> <!-- Cuerpo -->
+<h1>Formularios | Perez Hinostroza Cynthia Jacqueline</h1> <!-- título -->
+<p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p> <!-- Parrafo -->
 <p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
 esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
 ASP, ASP.NET, Node, etc.)
 </p>
-<h2>Ejemplo basico</h2>
+<h2>Ejemplo basico</h2> <!-- Subtitulo -->
+<!-- Contenedor del formulario.
+ - 'action=""': Indica la URL o archivo del servidor donde se enviarán los datos (si está vacío, se envía a la misma página).
+ - 'method="post"': Especifica el método HTTP para enviar los datos de forma oculta en la petición (no en la URL). -->
 <form action="" method="post">
-Ingresa tu nombre:
+Ingresa tu nombre: <!-- Texto para la casilla -->
+<!-- Campo de entrada de texto.
+ - 'type="text"': Define que se ingresará texto.
+ - 'name="nombre"': Clave con la que el servidor identificará este valor ingresado.
+ - 'size="20"': Ancho del cuadro en número de caracteres. -->
 <input type="text" name="nombre" size="20">
-<br>
+<br> <!-- Salto de línea -->
+<!-- Botón de envío.
+ - 'type="submit"': Que al hacer clic se procesará y enviará el formulario.
+ - 'value="enviar"': Texto visible del botón. -->
 <input type="submit" value="enviar">
-</form>
+</form> <!-- Cierre del formulario -->
 </body>
 </html>
