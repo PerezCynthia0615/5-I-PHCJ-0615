@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Formularios en HTML/PHCJ/0615</title> 
 <!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
-<body>
-<h2>Formulario con text area</h2>
-<form action="" method="post">
-Ingresa tu nombre:
-<input type="text" name="nombre">
-<br>
-Ingresa tu correo:
-<input type="email" name="correo">
-<br>
+<body> 
+<h2>Formulario con text area | Perez Hinostroza Cynthia Jacqueline</h2>
+<form action="" method="post"> <!-- Form: Formulario. -'action=""': Indica la URL o archivo del servidor donde se 
+enviarán los datos (si está vacío, se envía a la misma página). - 'method="post"': Especifica el método HTTP para enviar
+los datos de forma oculta en la petición (no en la URL). -->
+Ingresa tu nombre: <!-- Texto para la casilla -->
+<input type="text" name="nombre"><br> <!--'type="text"': Define que se ingresará texto. - 'name="nombre"': Clave con la 
+que el servidor identificará este valor ingresado.--> Ingresa tu correo: 
+<input type="email" name="correo"><br><!-- Correo electrónico.- 'type="email"': El texto tenga estructura de correo . 
+- 'name="correo"': Nombre identificador que usará el servidor para recibir la dirección de e-mail. -->
 Ingresa tus comentarios:
-<textarea name="comentarios" rows="1" cols="10"></textarea>
-<br>
-<input type="submit" value="enviar">
-<input type="reset" value="borrar">
-</form>
+<textarea name="comentarios" rows="1" cols="10"></textarea><br> <!-- Área de texto multilínea para comentarios largos o 
+párrafos. - 'name="comentarios"': Identificador con el que el servidor recopilará el mensaje largo. - 'rows="1"':  
+Cantidad inicial de filas de alto visibles. - 'cols="10"': Ancho visual del recuadro en número de caracteres. -->
+<input type="submit" value="enviar"> <!-- Botón de envío- 'type="submit"': Acción de enviar la información del formulario.
+- 'value="enviar"': Texto visible del botón. -->
+ <input type="reset" value="borrar"> <!-- 'type="reset"': Restablece todos los campos a sus valores iniciales-->
+</form> 
 </body>
 </html>
