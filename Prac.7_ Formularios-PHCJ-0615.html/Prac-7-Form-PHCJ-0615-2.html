@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Formularios en HTML/PHCJ/0615</title> 
 <!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
-<body>
-<h2>Formulario para contraseñas</h2>
+<body> 
+<h2>Formulario para contraseñas | Perez Hinostroza Cynthia Jacqueline</h2>
+<!-- Form: Formulario. -'action=""': Indica la URL o archivo del servidor donde se enviarán los datos (si está vacío, 
+se envía a la misma página). - 'method="post"': Especifica el método HTTP para enviar los datos de forma oculta en la 
+petición (no en la URL). -->
 <form action="" method="post">
-
-Ingresa tu usuario:
+Ingresa tu usuario: <!-- Texto para la casilla -->
+<!-- 'type="text"': Campo estándar para ingresar texto alfanumérico visible. - 'name="usuario"': Nombre del parámetro 
+que identificará este dato en el servidor. -->
 <input type="text" name="usuario">
 Ingresa tu contraseña:
-<input type="password" name="pass">
-<br>
+<!--'type="password"': Esconde los caracteres(con puntos o asteriscos)por seguridad.
+- 'name="pass"': Nombre del parámetro con el que el servidor recibirá la clave ingresada. -->
+<input type="password" name="pass"> <br>
+<!-- Botón de envío- 'type="submit"': Acción de enviar la información del formulario.
+- 'value="enviar"': Texto visible del botón. -->
 <input type="submit" value="enviar">
+<!-- 'type="reset"': Restablece todos los campos a sus valores iniciales-->
 <input type="reset" value="borrar">
-</form>
+</form> <!-- Cierre del formulario -->
 </body>
 </html>
